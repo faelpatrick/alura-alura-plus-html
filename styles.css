@@ -33,6 +33,7 @@ body {
 }
 .container__caixa {
   margin: 0 6em;
+  grid-area: descricao;
 }
 
 .container__botao {
@@ -83,6 +84,8 @@ body {
 
 .container__descricao {
   padding: 2em;
+  
+  grid-area: descricao;
 }
 
 .dispositivos {
@@ -173,12 +176,18 @@ body {
     margin: 4em 0;
   }
 
-  .container__invertido {
-    display: flex;
-    flex-direction: column-reverse;
+  .container {
+    display: grid;
     flex-wrap: nowrap;
+    grid-template-areas: "imagem" "descricao";
     justify-content: center;
     text-align: center;
+  }
+  .img{
+    grid-area: imagem;
+  }
+  .container_descricao{
+    grid-area: descricao;
   }
 
   .lista__link {
