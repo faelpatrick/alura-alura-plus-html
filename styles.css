@@ -33,7 +33,6 @@ body {
 }
 .container__caixa {
   margin: 0 6em;
-  grid-area: descricao;
 }
 
 .container__botao {
@@ -84,8 +83,12 @@ body {
 
 .container__descricao {
   padding: 2em;
-  
-  grid-area: descricao;
+}
+
+@media screen and (max-width: 1024px) {
+  .container__descricao {
+    grid-area: descricao;
+  }
 }
 
 .dispositivos {
@@ -134,9 +137,16 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    body {
+      width: 100vw;
+    }
+  }
   .principal {
     background-image: url("./img/Background_Mobile.png");
     padding-top: 100px;
+
+    grid-template-columns: auto;
   }
 
   .container {
@@ -183,10 +193,10 @@ body {
     justify-content: center;
     text-align: center;
   }
-  .img{
+  .img {
     grid-area: imagem;
   }
-  .container_descricao{
+  .container_descricao {
     grid-area: descricao;
   }
 
