@@ -42,7 +42,7 @@ body {
   color: var(--branco-principal);
   text-decoration: none;
   display: block;
-  margin: 1em;
+  padding: 1em;
 }
 .botao_secundario {
   background-color: transparent;
@@ -166,7 +166,7 @@ body {
   }
 
   .container__imagem {
-    width: 80%;
+    width: 80vw;
   }
 
   .dispositivos__lista {
