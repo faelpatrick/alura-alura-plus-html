@@ -47,7 +47,7 @@ body {
 .botao_secundario {
   background-color: transparent;
   border: 2px solid var(--branco-principal);
-  margin: 1em;
+  margin: 1em 0;
 }
 .secundario__botao {
   display: inline-block;
@@ -208,5 +208,12 @@ body {
 
   .dispositivos__titulos {
     font-size: 42px;
+  }
+
+  .container__titulo {
+    background: linear-gradient(rgb(4, 8, 20, 0.6) 0%, rgb(4, 8, 20, 0.7) 50%, rgb(4, 8, 20, 0.1) 100%);
+    padding: 0.5em;
+    border-radius: 2px;
+    box-shadow: 0px -9px 8px 6px #0408149c;
   }
 }
